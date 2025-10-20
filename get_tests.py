@@ -16,8 +16,9 @@ while True:
     print("Я прочитал, что Архитектор сказал:", inp)
   # ТЕСТ на основе результатов аналмза
   try:
-    loc = []
+    loc = {}
     result = eval(inp, None, loc)
+    print("Ok\t\t\t\t"*5)
   except BaseException as be:
     result = f"ОШИБКА тестирования: {be}"  # +f", при EVAL({inp})! Рекомендуется: `__import__(`"
   send_one = result + '/n' + str(loc)
