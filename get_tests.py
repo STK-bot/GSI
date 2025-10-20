@@ -9,7 +9,7 @@ while True:
   if inp:
     inp = "Архитектор промолчал, а это значит - молчание знак согласия."
     print(inp)
-  elif inp.strip().lower() in ["exit","quit","выход", "стоп"]
+  elif inp.strip().lower() in ["exit","quit","выход", "стоп"]:
     break
   else:
     print("Я прочитал, что Архитектор сказал:", inp)
