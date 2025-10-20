@@ -1,7 +1,7 @@
 #Python3
 puls = 0
 stop_list = ["exit","quit","выход", "стоп"]
-print("Список доступного глобального пространства имён:", dir(), "Для выхода используйте  : {stop_list}")
+print("Список доступного глобального пространства имён:", dir(), f"Для выхода используйте команды: {stop_list}")
 send_one = "Всё что вы введете будет проанализировано и добавлено в контекст безопасного тестирования"
 while True:
   puls += 1
@@ -19,3 +19,4 @@ while True:
     result = eval(inp, globals, locals)
   except BaseException as be:
     result = f"ОШИБКА тестирования: {be}"  # +f", при EVAL({inp})! Рекомендуется: `__import__(`"
+  send_one = result
