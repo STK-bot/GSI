@@ -21,4 +21,4 @@ while True:
     print("Ok\t\t\t\t"*5)
   except BaseException as be:
     result = f"ОШИБКА тестирования: {be}"  # +f", при EVAL({inp})! Рекомендуется: `__import__(`"
-  send_one = str(result) + '/n' + str(loc)
+  send_one = str(result) + '\n' + str(loc)
